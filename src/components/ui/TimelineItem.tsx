@@ -7,7 +7,8 @@ interface TimelineItemProps {
   date: string;
   description?: string;
   achievements?: string[];
-  technologies?: string[];
+  coursework?: string[];
+  // technologies?: string[];
   isLast?: boolean;
 }
 
@@ -17,7 +18,8 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   date,
   description,
   achievements,
-  technologies,
+  // technologies,
+  coursework,
   isLast = false,
 }) => {
   return (
@@ -63,7 +65,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           )}
 
           {/* Technologies */}
-          {technologies && technologies.length > 0 && (
+          {/* {technologies && technologies.length > 0 && (
             <div>
               <h4 className="text-sm font-medium text-secondary-900 mb-2">Technologies:</h4>
               <div className="flex flex-wrap gap-2">
@@ -73,6 +75,22 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
                     className="px-2 py-1 bg-primary-50 text-primary-700 text-xs rounded-md"
                   >
                     {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )} */}
+          {/* Coursework */}
+          {coursework && coursework.length > 0 && (
+            <div>
+              <h4 className="text-sm font-medium text-secondary-900 mb-2">Technologies:</h4>
+              <div className="flex flex-wrap gap-2">
+                {coursework.map((course, index) => (
+                  <span
+                    key={index}
+                    className="px-2 py-1 bg-primary-50 text-primary-700 text-xs rounded-md"
+                  >
+                    {course}
                   </span>
                 ))}
               </div>

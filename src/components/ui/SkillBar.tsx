@@ -26,12 +26,13 @@ const SkillBar: React.FC<SkillBarProps> = ({ name, level, category }) => {
     <div className="mb-4">
       <div className="flex justify-between items-center mb-2">
         <span className="text-sm font-medium text-secondary-900">{name}</span>
-        <span className="text-sm text-secondary-600">{level}%</span>
+        {/* <span className="text-sm text-secondary-600">{level}%</span> */}
       </div>
       <div className="w-full bg-secondary-200 rounded-full h-2">
         <div
           className={`h-2 rounded-full transition-all duration-500 ease-out ${getCategoryColor(category)}`}
-          style={{ width: `${level}%` }}
+          // style={{ width: `${level}%` }}
+          style={{ width: `100%` }}
         ></div>
       </div>
       <div className="mt-1">

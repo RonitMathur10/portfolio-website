@@ -1,7 +1,6 @@
 import React from 'react';
 import { personalInfo, skills } from '../data/personal';
 import Card from '../components/ui/Card';
-import SkillBar from '../components/ui/SkillBar';
 
 const About: React.FC = () => {
   const skillsByCategory = skills.reduce((acc, skill) => {
@@ -37,9 +36,9 @@ const About: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center shadow-lg">
+              {/* <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center shadow-lg">
                 <span className="text-white text-xl font-bold">DS</span>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -93,14 +92,14 @@ const About: React.FC = () => {
                 <h3 className="text-xl font-semibold text-secondary-900 mb-6 capitalize">
                   {category}
                 </h3>
-                <div className="space-y-4">
+                <div className="flex flex-wrap gap-3">
                   {categorySkills.map((skill, index) => (
-                    <SkillBar 
-                      key={index} 
-                      name={skill.name} 
-                      level={skill.level} 
-                      category={skill.category} 
-                    />
+                    <span
+                      key={index}
+                      className="px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-medium hover:bg-primary-100 transition-colors"
+                    >
+                      {skill.name}
+                    </span>
                   ))}
                 </div>
               </Card>
@@ -112,7 +111,7 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card className="p-6 text-center">
             <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl font-bold text-primary-600">5+</span>
+              <span className="text-2xl font-bold text-primary-600">2</span>
             </div>
             <h3 className="text-lg font-semibold text-secondary-900 mb-2">Years Experience</h3>
             <p className="text-secondary-600">
@@ -122,7 +121,7 @@ const About: React.FC = () => {
 
           <Card className="p-6 text-center">
             <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl font-bold text-primary-600">20+</span>
+              <span className="text-2xl font-bold text-primary-600">10+</span>
             </div>
             <h3 className="text-lg font-semibold text-secondary-900 mb-2">Projects Completed</h3>
             <p className="text-secondary-600">
@@ -132,11 +131,12 @@ const About: React.FC = () => {
 
           <Card className="p-6 text-center">
             <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-2xl font-bold text-primary-600">3</span>
+              <span className="text-2xl font-bold text-primary-600">1</span>
             </div>
             <h3 className="text-lg font-semibold text-secondary-900 mb-2">Publications</h3>
             <p className="text-secondary-600">
-              Research papers in machine learning conferences
+              {/* Research papers in machine learning conferences */}
+              Research paper in International Conference
             </p>
           </Card>
         </div>

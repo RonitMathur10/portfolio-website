@@ -24,7 +24,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold text-primary-600 hover:text-primary-700 transition-colors">
-              Alex Johnson
+              Ronit Mathur
             </Link>
           </div>
 

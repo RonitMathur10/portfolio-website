@@ -97,18 +97,14 @@ const Home: React.FC = () => {
             <p className="text-lg text-secondary-600">Technologies and tools I work with</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="flex flex-wrap justify-center gap-3">
             {topSkills.map((skill, index) => (
-              <Card key={index} className="text-center">
-                <h3 className="font-semibold text-secondary-900 mb-2">{skill.name}</h3>
-                <div className="w-full bg-secondary-200 rounded-full h-2">
-                  <div
-                    className="bg-primary-500 h-2 rounded-full transition-all duration-500"
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
-                <span className="text-sm text-secondary-600 mt-2 block">{skill.level}%</span>
-              </Card>
+              <span
+                key={index}
+                className="px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-medium hover:bg-primary-100 transition-colors"
+              >
+                {skill.name}
+              </span>
             ))}
           </div>
 

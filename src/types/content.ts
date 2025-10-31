@@ -18,7 +18,8 @@ export interface SocialLink {
 export interface Skill {
   name: string;
   level: number; // 1-100
-  category: 'programming' | 'tools' | 'frameworks' | 'other';
+  // category: 'programming' | 'tools' | 'frameworks' | 'other';
+  category: 'programming' | 'tools' | 'libraries & frameworks' | 'skills';
 }
 
 export interface Education {

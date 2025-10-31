@@ -41,7 +41,8 @@ const Education: React.FC = () => {
                         `GPA: ${edu.gpa}`,
                         ...(edu.achievements || [])
                       ]}
-                      technologies={edu.coursework || []}
+                      // technologies={edu.coursework || []}
+                      coursework={edu.coursework || []}
                     />
                   </div>
                 </div>
@@ -89,14 +90,14 @@ const Education: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex flex-wrap justify-center gap-3">
             {education.flatMap(edu => edu.coursework || []).map((course, index) => (
-              <Card key={index} className="p-4 text-center hover:shadow-lg transition-shadow">
-                <h3 className="font-semibold text-secondary-900 mb-2">{course}</h3>
-                <div className="w-full bg-primary-100 h-1 rounded-full">
-                  <div className="bg-primary-500 h-1 rounded-full w-full"></div>
-                </div>
-              </Card>
+              <span
+                key={index}
+                className="px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-medium hover:bg-primary-100 transition-colors"
+              >
+                {course}
+              </span>
             ))}
           </div>
         </div>
