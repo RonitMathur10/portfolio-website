@@ -88,6 +88,7 @@ const Experience: React.FC = () => {
                       description={exp.description}
                       achievements={exp.achievements}
                       technologies={exp.technologies}
+                      link={exp.link}
                     />
                   </div>
                 </div>

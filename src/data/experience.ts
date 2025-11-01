@@ -17,6 +17,20 @@ export const experience: Experience[] = [
     technologies: ["Python", "Pandas", "Scikit-learn", "Tableau", "SQL", "Git"]
   },
   {
+    id: "usc-research",
+    company: "USC Viterbi",
+    position: "Research Co-Author",
+    startDate: "2024-06",
+    endDate: "2024-08",
+    description: "Research Paper",
+    achievements: [
+      "Authored a paper on sentiment analysis of patient reviews for a healthcare startup",
+      "Presented research at EDBT 2025 conference"
+    ],
+    technologies: ["Python"],
+    link: "https://openproceedings.org/2025/conf/edbt/paper-263.pdf"
+  },
+  {
     id: "2",
     company: "University Research Lab",
     position: "Undergraduate Research Assistant",

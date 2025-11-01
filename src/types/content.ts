@@ -32,6 +32,7 @@ export interface Education {
   gpa?: number;
   coursework?: string[];
   achievements?: string[];
+  societies?: Society[];
 }
 
 export interface Experience {
@@ -43,6 +44,7 @@ export interface Experience {
   description: string;
   achievements: string[];
   technologies: string[];
+  link?: string;
 }
 
 export interface Project {
@@ -64,4 +66,22 @@ export interface Interest {
   description: string;
   icon: string;
   category: string;
+}
+
+export interface Award {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  date: string;
+  category: string;
+}
+
+export interface Society {
+  id: string;
+  name: string;
+  description: string;
+  imageUrl: string;
+  category: string;
+  link?: string;
 }

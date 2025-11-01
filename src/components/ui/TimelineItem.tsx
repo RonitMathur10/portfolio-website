@@ -8,7 +8,8 @@ interface TimelineItemProps {
   description?: string;
   achievements?: string[];
   coursework?: string[];
-  // technologies?: string[];
+  technologies?: string[];
+  link?: string;
   isLast?: boolean;
 }
 
@@ -20,6 +21,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
   achievements,
   // technologies,
   coursework,
+  link,
   isLast = false,
 }) => {
   return (
@@ -61,6 +63,20 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
                   </li>
                 ))}
               </ul>
+            </div>
+          )}
+
+          {/* Link */}
+          {link && (
+            <div className="mb-4">
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-600 font-small hover:underline"
+              >
+                View Paper
+              </a>
             </div>
           )}
 

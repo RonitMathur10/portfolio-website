@@ -2,7 +2,7 @@ import React from 'react';
 import { education } from '../data/education';
 import TimelineItem from '../components/ui/TimelineItem';
 import Card from '../components/ui/Card';
-import { GraduationCap, Award, BookOpen } from 'lucide-react';
+import { GraduationCap, Award, BookOpen, Users } from 'lucide-react';
 
 const Education: React.FC = () => {
   return (
@@ -82,7 +82,7 @@ const Education: React.FC = () => {
         </div>
 
         {/* Key Coursework */}
-        <div>
+        <div className="mb-16">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-secondary-900 mb-4">Key Coursework</h2>
             <p className="text-lg text-secondary-600">
@@ -98,6 +98,49 @@ const Education: React.FC = () => {
               >
                 {course}
               </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Societies & Organizations */}
+        <div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-secondary-900 mb-4">Societies & Clubs</h2>
+            <p className="text-lg text-secondary-600">
+              {/* Extracurricular involvement and leadership in academic and social organizations */}
+              Extracurricular involvement
+            </p>
+          </div>
+
+          {/* Societies Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {education.flatMap(edu => edu.societies || []).map((society) => (
+              <Card key={society.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+                {/* Society Image */}
+                <div className="h-40 bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center">
+                  <div className="text-center">
+                    <Users className="w-12 h-12 text-primary-600 mx-auto mb-2" />
+                    <p className="text-primary-700 font-medium">Society Image</p>
+                    <p className="text-primary-600 text-sm">Upload society photo here</p>
+                  </div>
+                </div>
+
+                {/* Society Content */}
+                <div className="p-4">
+                  <div className="mb-3">
+                    <h3 className="text-lg font-bold text-secondary-900 mb-2">
+                      {society.name}
+                    </h3>
+                    <span className="inline-block px-2 py-1 bg-primary-50 text-primary-700 rounded-full text-xs font-medium">
+                      {society.category}
+                    </span>
+                  </div>
+
+                  <p className="text-secondary-600 text-sm leading-relaxed">
+                    {society.description}
+                  </p>
+                </div>
+              </Card>
             ))}
           </div>
         </div>

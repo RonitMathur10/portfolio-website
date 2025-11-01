@@ -6,6 +6,7 @@ import Education from "./pages/Education";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Interests from "./pages/Interests";
+import Awards from "./pages/Awards";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/awards" element={<Awards />} />
           <Route path="/interests" element={<Interests />} />
         </Routes>
       </Layout>
