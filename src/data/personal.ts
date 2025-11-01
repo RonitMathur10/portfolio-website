@@ -9,7 +9,6 @@ export const personalInfo: PersonalInfo = {
   phone: "+1 (949) 506-9568",
   location: "Berkeley, CA",
   bio: "Passionate data science undergraduate with a strong foundation in machine learning, statistical analysis, and data visualization. Currently pursuing a Bachelor's degree in Data Science with a focus on predictive modeling and artificial intelligence. Eager to apply analytical skills to solve real-world problems and contribute to data-driven decision making.",
-  // profileImage: "https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20headshot%20of%20a%20young%20data%20scientist%20student%2C%20friendly%20smile%2C%20business%20casual%20attire%2C%20clean%20background%2C%20high%20quality%20portrait&image_size=square",
   profileImage: profile_photo,
   socialLinks: [
     {
