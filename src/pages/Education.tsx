@@ -117,21 +117,32 @@ const Education: React.FC = () => {
             {education.flatMap(edu => edu.societies || []).map((society) => (
               <Card key={society.id} className="overflow-hidden hover:shadow-lg transition-shadow">
                 {/* Society Image */}
-                <div className="h-40 bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center">
-                  <div className="text-center">
-                    <Users className="w-12 h-12 text-primary-600 mx-auto mb-2" />
-                    <p className="text-primary-700 font-medium">Society Image</p>
-                    <p className="text-primary-600 text-sm">Upload society photo here</p>
-                  </div>
+                <div className="h-48 overflow-hidden">
+                  <img
+                    src={society.imageUrl}
+                    alt={society.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Society Content */}
-                <div className="p-4">
+                <div className="p-6">
                   <div className="mb-3">
-                    <h3 className="text-lg font-bold text-secondary-900 mb-2">
-                      {society.name}
-                    </h3>
-                    <span className="inline-block px-2 py-1 bg-primary-50 text-primary-700 rounded-full text-xs font-medium">
+                    {society.link ? (
+                      <a 
+                        href={society.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-lg font-bold text-secondary-900 mb-2 hover:text-primary-600 hover:underline transition-colors block"
+                      >
+                        {society.name}
+                      </a>
+                    ) : (
+                      <h3 className="text-lg font-bold text-secondary-900 mb-2">
+                        {society.name}
+                      </h3>
+                    )}
+                    <span className="inline-block px-3 py-1 bg-primary-50 text-primary-700 rounded-full text-xs font-medium">
                       {society.category}
                     </span>
                   </div>

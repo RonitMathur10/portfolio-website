@@ -26,38 +26,38 @@ const Experience: React.FC = () => {
         </div>
 
         {/* Experience Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          <Card className="p-6 text-center">
-            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Calendar className="w-8 h-8 text-primary-600" />
+        <div className="flex flex-wrap justify-center gap-4 mb-16 max-w-4xl mx-auto">
+          <Card className="p-8 text-center flex-1 min-w-[280px] max-w-[320px]">
+            <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Calendar className="w-10 h-10 text-primary-600" />
             </div>
-            <h3 className="text-lg font-semibold text-secondary-900 mb-2">Years Experience</h3>
-            <p className="text-3xl font-bold text-primary-600">{Math.round(totalYears)}</p>
+            <h3 className="text-xl font-semibold text-secondary-900 mb-3">Years Experience</h3>
+            <p className="text-4xl font-bold text-primary-600">{Math.round(totalYears)}</p>
           </Card>
 
-          <Card className="p-6 text-center">
-            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Briefcase className="w-8 h-8 text-primary-600" />
+          <Card className="p-8 text-center flex-1 min-w-[280px] max-w-[320px]">
+            <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Briefcase className="w-10 h-10 text-primary-600" />
             </div>
-            <h3 className="text-lg font-semibold text-secondary-900 mb-2">Positions</h3>
-            <p className="text-3xl font-bold text-primary-600">{experience.length}</p>
+            <h3 className="text-xl font-semibold text-secondary-900 mb-3">Positions</h3>
+            <p className="text-4xl font-bold text-primary-600">{experience.length}</p>
           </Card>
 
-          <Card className="p-6 text-center">
-            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-primary-600" />
+          <Card className="p-8 text-center flex-1 min-w-[280px] max-w-[320px]">
+            <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Users className="w-10 h-10 text-primary-600" />
             </div>
-            <h3 className="text-lg font-semibold text-secondary-900 mb-2">Companies</h3>
-            <p className="text-3xl font-bold text-primary-600">{new Set(experience.map(exp => exp.company)).size}</p>
+            <h3 className="text-xl font-semibold text-secondary-900 mb-3">Companies</h3>
+            <p className="text-4xl font-bold text-primary-600">{new Set(experience.map(exp => exp.company)).size}</p>
           </Card>
 
-          <Card className="p-6 text-center">
+          {/* <Card className="p-6 text-center">
             <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <TrendingUp className="w-8 h-8 text-primary-600" />
             </div>
             <h3 className="text-lg font-semibold text-secondary-900 mb-2">Career Growth</h3>
             <p className="text-3xl font-bold text-primary-600">100%</p>
-          </Card>
+          </Card> */}
         </div>
 
         {/* Experience Timeline */}

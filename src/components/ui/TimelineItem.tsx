@@ -99,7 +99,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           {/* Coursework */}
           {coursework && coursework.length > 0 && (
             <div>
-              <h4 className="text-sm font-medium text-secondary-900 mb-2">Technologies:</h4>
+              <h4 className="text-sm font-medium text-secondary-900 mb-2">Coursework:</h4>
               <div className="flex flex-wrap gap-2">
                 {coursework.map((course, index) => (
                   <span

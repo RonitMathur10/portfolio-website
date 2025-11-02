@@ -1,4 +1,6 @@
 import { Education, Society } from '../types/content';
+import FEB from '../assets/FEB.png';
+import Codify from '../assets/Codify.png';
 
 export const education: Education[] = [
   {
@@ -8,50 +10,34 @@ export const education: Education[] = [
     field: "Data Science",
     startDate: "2025-08",
     endDate: "2029-05",
-    gpa: 0.00,
+    gpa: 4.00,
     coursework: [
       "Foundations in Data Science (Data C8)",
       "Structure and Interpretation of Computer Programs (CS 61A)",
       "Machine Learning @ Berkeley Decal Course (CS 198)",
     ],
-    achievements: [
-    ],
+    // achievements: [
+    // ]
     societies: [
-      {
-        id: "ds-society",
-        name: "Data Science Society",
-        description: "A student organization focused on building a community of data science enthusiasts through workshops, networking events, and collaborative projects.",
-        imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
-        category: "Academic"
-      },
-      {
-        id: "ml-berkeley",
-        name: "Machine Learning @ Berkeley",
-        description: "Student-run organization dedicated to making machine learning accessible through education, research, and industry connections.",
-        imageUrl: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop",
-        category: "Academic"
-      }
-      // {
-      //   id: "bsc",
-      //   name: "Berkeley Student Cooperative",
-      //   description: "A housing cooperative providing affordable living options while fostering community engagement and sustainable living practices.",
-      //   imageUrl: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop",
-      //   category: "Housing"
-      // },
-      // {
-      //   id: "cal-hiking",
-      //   name: "Cal Hiking & Outdoor Society",
-      //   description: "Outdoor recreation club organizing hiking trips, camping adventures, and environmental conservation activities around the Bay Area.",
-      //   imageUrl: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=400&h=300&fit=crop",
-      //   category: "Recreation"
-      // },
-      // {
-      //   id: "usa",
-      //   name: "Undergraduate Statistics Association",
-      //   description: "Professional organization connecting statistics students with career opportunities, research projects, and academic support.",
-      //   imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
-      //   category: "Academic"
-      // }
+        {
+            id: "FEB",
+            name: "Formula Electric @ Berkeley",
+            description: "Software engineer for the Autonomous subteam of Berkeley's electric racing team",
+            // imageUrl: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop",
+            // imageUrl: "https://www.google.com/search?sca_esv=8f56ccbb6b3ac8ff&rlz=1C5MACD_enUS1164US1164&udm=2&fbs=AIIjpHxU7SXXniUZfeShr2fp4giZ1Y6MJ25_tmWITc7uy4KIeqDdErwP5rACeJAty2zADJjYuUnSkczEhozYdaq1wZrE2Y0FseakjNIJw-yMUFwHa6ADNJWAoQo1h7kJvh7-RIGymsR_Vi34_z_n3fJxSMOQahARHFkwwFfudMKP2CB4MoMw2rkt8FSuJbjIMoRZQxwNukDmFOnGYOTlMR7Q7I-wVTTimQ&q=formula+electric+berkeley&sa=X&ved=2ahUKEwj0x6Ow99GQAxWQADQIHbK0IKIQtKgLegQIExAB&cshid=1762033896279312&biw=1710&bih=981&dpr=2#sv=CAMSVhoyKhBlLWZDN3M3UGE0bFVEeU9NMg5mQzdzN1BhNGxVRHlPTToONG9FY2tHNzFFd2FDNE0gBCocCgZtb3NhaWMSEGUtZkM3czdQYTRsVUR5T00YADABGAcggvG--w4wAkoKCAIQAhgCIAIoAg",
+            // imageUrl: FEB,
+            imageUrl: FEB,
+            category: "Clubs",
+            link: "https://ev.studentorg.berkeley.edu/"
+          },
+          {
+            id: "codify-berkeley",
+            name: "Codify Berkeley",
+            description: "Software Engineer at Codify, a Berkeley coding club",
+            imageUrl: Codify,
+            category: "Clubs",
+            link: "https://codifyberkeley.org/"
+          }
     ]
   },
   {
@@ -64,11 +50,11 @@ export const education: Education[] = [
     gpa: 3.9,
     coursework: [
       "AP Computer Science A (Java)",
-      "Calculus I & II",
       "Analytic Geometry & Calculus III",
       "Differential Equations",
       "Linear Algebra",
       "AP Statistics",
+      "Calculus I & II",
       "Physics I & II",
       "Physics C: Mechanics",
       "Physics C: Electricity & Magnetism",
@@ -81,9 +67,9 @@ export const education: Education[] = [
     societies: [
       {
         id: "portola-data-science-club",
-        name: "Portola Data Science Club",
-        description: "Founder of first Data Science club at school",
-        imageUrl: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop",
+        name: "Data Science Club",
+        description: "Founder of first Data Science club in High School",
+        imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
         category: "Clubs"
       }
     ]
