@@ -1,6 +1,6 @@
 import { Education, Society } from '../types/content';
-import FEB from '../assets/FEB.png';
-import Codify from '../assets/Codify.png';
+import FEB from '../assets/Clubs/FEB.png';
+import Codify from '../assets/Clubs/Codify.png';
 
 export const education: Education[] = [
   {

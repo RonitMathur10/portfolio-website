@@ -16,7 +16,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <img
           src={project.imageUrl}
           alt={project.title}
-          className="w-full h-48 object-cover rounded-lg"
+          className="w-full h-112 object-cover rounded-lg"
+          // h-64 used to change image height
         />
       </div>
 

@@ -2,35 +2,27 @@ import { Award } from '../types/content';
 
 export const awards: Award[] = [
   {
-    id: '1',
-    title: 'Dean\'s List Recognition',
-    description: 'Achieved Dean\'s List recognition for maintaining a GPA above 3.7 while taking a full course load. This award recognizes academic excellence and dedication to scholarly pursuits in computer science and data analytics.',
-    imageUrl: '/api/placeholder/400/300',
-    date: 'May 2023',
+    id: 'trae-solo-hackathon',
+    title: 'Trae Solo Hackathon, Trae AI - 1st Place',
+    description: '1st out of 50+ projects, $1500 cash award. Recognized for exceptional technical innovation and implementation in AI-powered solutions, demonstrating outstanding problem-solving skills and creative application of artificial intelligence technologies.',
+    imageUrl: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=300&fit=crop&crop=center',
+    date: '2024',
+    category: 'Competition'
+  },
+  {
+    id: 'yale-science-fair',
+    title: 'Yale Science and Engineering Association - 1 out of 750+ projects',
+    description: 'Outstanding exhibit in CS at Science Fair. Recognized among the top performers out of over 750 competing projects, demonstrating exceptional research quality, technical implementation, and presentation skills in computer science.',
+    imageUrl: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=400&h=300&fit=crop&crop=center',
+    date: '2023',
     category: 'Academic'
   },
   {
-    id: '2',
-    title: 'Best Data Science Project Award',
-    description: 'Received the Best Data Science Project Award for developing a machine learning model that predicts student performance with 92% accuracy. The project was recognized for its innovative approach and practical applications in educational technology.',
-    imageUrl: '/api/placeholder/400/300',
-    date: 'December 2023',
-    category: 'Project'
-  },
-  {
-    id: '3',
-    title: 'Outstanding Research Contribution',
-    description: 'Honored with the Outstanding Research Contribution award for publishing a research paper on machine learning applications in educational data mining. The work was presented at an international conference and received positive peer reviews.',
-    imageUrl: '/api/placeholder/400/300',
-    date: 'March 2024',
-    category: 'Research'
-  },
-  {
-    id: '4',
-    title: 'Hackathon Winner - Data Analytics Track',
-    description: 'Won first place in the Data Analytics track at the university hackathon by developing a real-time dashboard for analyzing social media sentiment. The solution impressed judges with its technical implementation and user experience design.',
-    imageUrl: '/api/placeholder/400/300',
-    date: 'October 2023',
+    id: 'california-science-fair',
+    title: 'California Science and Engineering Fair Winner - Honorable Mention',
+    description: 'Top 15 out of 100+ projects (state level). Achieved honorable mention recognition at the state level, highlighting exceptional research methodology, innovative approach, and significant contribution to the field of science and engineering.',
+    imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center',
+    date: '2023',
     category: 'Competition'
   }
 ];

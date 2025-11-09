@@ -14,7 +14,10 @@ const Awards: React.FC = () => {
 
   const totalAwards = awards.length;
   const categories = Object.keys(awardsByCategory).length;
-  const latestYear = Math.max(...awards.map(award => new Date(award.date).getFullYear()));
+  const validYears = awards
+    .map(award => new Date(award.date).getFullYear())
+    .filter(year => !isNaN(year));
+  const latestYear = validYears.length > 0 ? Math.max(...validYears) : new Date().getFullYear();
 
   return (
     <div className="min-h-screen py-16">
@@ -61,7 +64,7 @@ const Awards: React.FC = () => {
           {awards.map((award) => (
             <Card key={award.id} className="overflow-hidden hover:shadow-lg transition-shadow">
               {/* Award Image */}
-              <div className="h-48 bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center">
+              <div className="h-64 bg-gradient-to-br from-primary-50 to-primary-100 flex items-center justify-center">
                 <div className="text-center">
                   <Award className="w-16 h-16 text-primary-600 mx-auto mb-2" />
                   <p className="text-primary-700 font-medium">Award Image</p>

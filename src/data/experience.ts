@@ -2,62 +2,47 @@ import { Experience } from '../types/content';
 
 export const experience: Experience[] = [
   {
-    id: "1",
-    company: "TechStart Analytics",
-    position: "Data Science Intern",
-    startDate: "2024-06",
-    endDate: "2024-08",
-    description: "Worked on customer behavior analysis and predictive modeling projects for e-commerce clients. Collaborated with senior data scientists to develop machine learning models and create data visualizations for stakeholder presentations.",
+    id: "tlw-frontend",
+    company: "The Learning Wok (TLW)",
+    position: "Frontend Intern",
+    startDate: "2025-05",
+    endDate: "2025-08",
+    description: "Developed a full-stack competition testing platform and live leaderboard system using modern web technologies. Implemented comprehensive authentication and backend systems to enhance educational outcomes.",
     achievements: [
-      "Developed a customer churn prediction model with 87% accuracy",
-      "Created interactive dashboards that reduced reporting time by 40%",
-      "Presented findings to C-level executives",
-      "Mentored 2 junior interns in Python and data analysis techniques"
+      "Coded a full-stack website using TypeScript and CSS to function as competition testing platform & live leaderboard",
+      "Implemented Firebase auth and backend to store results",
+      "Increased class pass rates by 60% and customer base by 35%"
     ],
-    technologies: ["Python", "Pandas", "Scikit-learn", "Tableau", "SQL", "Git"]
+    technologies: ["TypeScript", "CSS", "Firebase", "Authentication", "Backend Development"]
+  },
+  {
+    id: "prsti-ai",
+    company: "Prsti AI",
+    position: "Data Analyst Intern",
+    startDate: "2024-06",
+    endDate: "2025-11",
+    description: "Conducted comprehensive data analysis and machine learning model evaluation for healthcare and Dharma projects. Developed analytical frameworks and dashboards to optimize decision-making processes.",
+    achievements: [
+      "Orchestrated exploratory data analysis (EDA) techniques in Python: inputted, standardized, and categorized 1 million+ error values from Dharma and healthcare projects for statistical insights",
+      "Evaluated relative performance of 20 classification and regression models",
+      "Documented results and developed dashboards for informed analysis, decreasing analysis time by 20%"
+    ],
+    technologies: ["Python", "EDA", "Machine Learning", "Classification", "Regression", "Data Visualization", "Dashboards"]
   },
   {
     id: "usc-research",
-    company: "USC Viterbi",
+    company: "USC Viterbi Computer Science Dept.",
     position: "Research Co-Author",
     startDate: "2024-06",
-    endDate: "2024-08",
-    description: "Research Paper",
+    endDate: "2025-01",
+    description: "Engineered machine learning fairness frameworks and conducted comprehensive research on demographic bias in decision systems. Published research findings at top-tier academic conference.",
     achievements: [
-      "Authored a paper on sentiment analysis of patient reviews for a healthcare startup",
-      "Presented research at EDBT 2025 conference"
+      "Engineered an ML fairness framework analyzing spatial and non-spatial demographic bias in decision systems for banks, ads, and law enforcement, bridging geographic and protected-attribute data",
+      "Synthesized 8 prior papers, refactored 10-year-old research codebase with modern Python libraries (pandas, rtree, statsmodels API, etc.)",
+      "Automated ETL pipelines using scikit-learn to process 10 million+ data points, uncovering bias patterns across Top 10 banks",
+      "Co-authored paper published at EDBT 2025"
     ],
-    technologies: ["Python"],
+    technologies: ["Python", "Machine Learning", "Pandas", "Rtree", "Statsmodels", "Scikit-learn", "ETL", "Research"],
     link: "https://openproceedings.org/2025/conf/edbt/paper-263.pdf"
-  },
-  {
-    id: "2",
-    company: "University Research Lab",
-    position: "Undergraduate Research Assistant",
-    startDate: "2023-09",
-    endDate: "Present",
-    description: "Conducting research on natural language processing applications in healthcare data. Working under Dr. Sarah Chen to analyze patient feedback and medical records using machine learning techniques.",
-    achievements: [
-      "Co-authored research paper submitted to ICML 2024",
-      "Developed NLP pipeline for sentiment analysis of patient reviews",
-      "Processed and analyzed dataset of 50,000+ medical records",
-      "Presented research at undergraduate symposium"
-    ],
-    technologies: ["Python", "NLTK", "spaCy", "TensorFlow", "Jupyter", "PostgreSQL"]
-  },
-  {
-    id: "3",
-    company: "DataTutor Inc.",
-    position: "Statistics Tutor",
-    startDate: "2023-01",
-    endDate: "2024-05",
-    description: "Provided one-on-one and group tutoring sessions for undergraduate students in statistics, probability, and introductory data science courses. Developed custom learning materials and practice problems.",
-    achievements: [
-      "Maintained 4.9/5 student satisfaction rating",
-      "Helped 25+ students improve their grades by at least one letter grade",
-      "Created comprehensive study guides for statistics courses",
-      "Trained 3 new tutors in effective teaching methodologies"
-    ],
-    technologies: ["R", "Excel", "SPSS", "Minitab"]
   }
 ];

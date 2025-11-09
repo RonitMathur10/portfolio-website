@@ -1,50 +1,61 @@
 import { Project } from '../types/content';
+import FEB from '../assets/Projects/FEB_Project_Screenshot.png';
 
 export const projects: Project[] = [
   {
-    id: "1",
-    title: "COVID-19 Impact Analysis Dashboard",
-    description: "Interactive dashboard analyzing the economic and social impact of COVID-19 across different regions using real-time data.",
-    longDescription: "Developed a comprehensive dashboard that visualizes the multifaceted impact of COVID-19 on various sectors including healthcare, economy, and education. The project involved data collection from multiple APIs, data cleaning and preprocessing, statistical analysis, and creating interactive visualizations. The dashboard provides insights into infection rates, economic indicators, and social mobility patterns across different geographical regions.",
-    technologies: ["Python", "Plotly Dash", "Pandas", "NumPy", "APIs", "CSS"],
-    githubUrl: "https://github.com/alexjohnson/covid-impact-dashboard",
-    liveUrl: "https://covid-impact-dashboard.herokuapp.com",
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop&crop=center",
+    id: "feb-project",
+    title: "Formula Electric @ Berkeley - Autonomous Project",
+    description: "Simulated autonomous racing car on a track with Python and PID controllers.",
+    longDescription: "Implemented dual PID controllers and Kinematic Bicycle Model for motion prediction and path tracking via vector projection, leveraging CasADi for control optimization",
+    technologies: ["Python", "CasADi", "PID Controllers", "Kinematic Bicycle Model"],
+    githubUrl: "https://github.com/RonitMathur10/Autonomous_Project_FEB/tree/main",
+    imageUrl: FEB,
     featured: true,
-    category: "data-visualization"
+    category: "automation"
   },
   {
-    id: "2",
-    title: "Student Performance Predictor",
-    description: "Machine learning model to predict student academic performance based on various demographic and behavioral factors.",
-    longDescription: "Built a comprehensive machine learning pipeline to predict student academic outcomes using features such as study habits, socioeconomic background, previous grades, and extracurricular activities. The project involved extensive data preprocessing, feature engineering, model selection, and hyperparameter tuning. Achieved 92% accuracy using ensemble methods and provided actionable insights for educational interventions.",
-    technologies: ["Python", "Scikit-learn", "XGBoost", "Matplotlib", "Seaborn", "Jupyter"],
-    githubUrl: "https://github.com/alexjohnson/student-performance-predictor",
+    id: "berkeley-course-search",
+    title: "Automated Berkeley Course Search",
+    description: "Built Selenium web scraper for filtering Berkeley courses; parsed 6K+ courses into 20, optimized for freshman year.",
+    longDescription: "Developed an automated web scraping solution using Python and Selenium Library to efficiently filter and parse Berkeley course offerings. The system processes over 6,000 courses and intelligently filters them down to the most relevant 20 courses optimized specifically for freshman year planning. This tool significantly streamlines the course selection process for new students.",
+    technologies: ["Python", "Selenium", "Web Scraping", "Data Processing"],
+    githubUrl: "https://github.com/RonitMathur10/Automated-Berkeley-Course-Search",
+    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop&crop=center",
+    featured: true,
+    category: "automation"
+  },
+  {
+    id: "project-omni",
+    title: "Project OMNI",
+    description: "Programmed Raspberry Pi for building vision for night safety. Experimented with 7 ML architectures (Inception, Region-Based CNN, etc.) and feature optimization to increase night-vision accuracy from 70% to 90%.",
+    longDescription: "Developed a comprehensive night-vision safety system using Raspberry Pi and advanced machine learning techniques. The project involved extensive experimentation with 7 different ML architectures including Inception and Region-Based CNN models. Through systematic feature optimization and model tuning, achieved a significant improvement in night-vision accuracy from 70% to 90%. Authored technical reports to demonstrate algorithmic improvements and obtained $2000 research scholarship funding.",
+    technologies: ["Python", "Raspberry Pi", "Machine Learning", "Inception", "Region-Based CNN", "Computer Vision"],
+    githubUrl: "https://github.com/ronitmathur10/project-omni",
     imageUrl: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=450&fit=crop&crop=center",
     featured: true,
     category: "machine-learning"
   },
   {
-    id: "3",
-    title: "Social Media Sentiment Analyzer",
-    description: "NLP-powered tool for analyzing sentiment trends in social media posts related to brand mentions and product reviews.",
-    longDescription: "Developed a natural language processing application that analyzes sentiment in social media posts and product reviews. The system uses advanced NLP techniques including tokenization, named entity recognition, and sentiment classification. Built a web interface for real-time sentiment analysis and trend visualization, helping businesses understand public opinion about their products and services.",
-    technologies: ["Python", "NLTK", "spaCy", "Flask", "MongoDB", "Chart.js"],
-    githubUrl: "https://github.com/alexjohnson/sentiment-analyzer",
-    liveUrl: "https://sentiment-analyzer-demo.netlify.app",
+    id: "research-competitor-isef",
+    title: "Research Competitor, International Science & Engineering Fair (ISEF)",
+    description: "Built and customized a ResNet-34 CNN in Python using Tensorflow and FastAI, modifying backpropagation, learning rate scheduler, and loss functions. 5 providers on diseases using images from a mobile device.",
+    longDescription: "Developed a sophisticated deep learning solution for medical diagnosis using mobile device imagery. Built and extensively customized a ResNet-34 CNN architecture using TensorFlow and FastAI frameworks. The project involved advanced modifications to backpropagation algorithms, learning rate scheduling, and custom loss functions. Conducted 50+ trials with automated tracking and early stopping techniques, applying data augmentation in Python to improve generalization accuracy by 50%. Successfully increased baseline model performance and developed a Kotlin Android app published on Google Playstore, integrating the trained model via TensorFlow Lite with ONNX Runtime for real-time classification. Garnered 50+ downloads and achieved 4.0+ reviews.",
+    technologies: ["Python", "TensorFlow", "FastAI", "ResNet-34", "CNN", "Kotlin", "Android", "ONNX", "TensorFlow Lite"],
+    githubUrl: "https://github.com/ronitmathur10/isef-research",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.ronitmathur.medicalai",
     imageUrl: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=450&fit=crop&crop=center",
-    featured: false,
-    category: "nlp"
+    featured: true,
+    category: "machine-learning"
   },
   {
-    id: "4",
-    title: "Housing Price Prediction Model",
-    description: "Regression model for predicting real estate prices using location, property features, and market trends data.",
-    longDescription: "Created a sophisticated regression model to predict housing prices in the Boston metropolitan area. The project involved web scraping real estate data, extensive feature engineering including location-based features, property characteristics, and neighborhood demographics. Implemented multiple regression techniques and compared their performance, ultimately achieving a mean absolute error of less than $15,000 on test data.",
-    technologies: ["Python", "BeautifulSoup", "Pandas", "Scikit-learn", "Folium", "Streamlit"],
-    githubUrl: "https://github.com/alexjohnson/housing-price-predictor",
+    id: "student-launch-initiative",
+    title: "Student Launch Initiative - NASA Student Research",
+    description: "Led avionics team of 7 in high-power rocketry. Programmed avionics modules using Arduino and Teensy 4.1 with C++ firmware for live telemetry, sensor logging, and recovery deployment.",
+    longDescription: "Led a multidisciplinary avionics team of 7 members in NASA's Student Launch Initiative, focusing on high-power rocketry systems. Developed comprehensive avionics solutions using Arduino and Teensy 4.1 microcontrollers with custom C++ firmware. The system provided real-time telemetry data transmission, comprehensive sensor data logging, and automated recovery deployment mechanisms. Successfully validated all designs with NASA engineers, demonstrating technical excellence and project management capabilities in aerospace engineering applications.",
+    technologies: ["C++", "Arduino", "Teensy 4.1", "Firmware", "Telemetry", "Sensor Integration", "Python"],
+    githubUrl: "https://github.com/ronitmathur10/nasa-student-launch",
     imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=450&fit=crop&crop=center",
     featured: false,
-    category: "machine-learning"
+    category: "embedded-systems"
   }
 ];
