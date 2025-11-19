@@ -1,5 +1,8 @@
 import { Project } from '../types/content';
 import FEB from '../assets/Projects/FEB_Project_Screenshot.png';
+import BCS from '../assets/Projects/BCS.png';
+import EyeDiseaseApp from '../assets/Projects/EyeDiseaseApp.png';
+import OMNI from '../assets/Projects/OMNI.png';
 
 export const projects: Project[] = [
   {
@@ -20,7 +23,7 @@ export const projects: Project[] = [
     longDescription: "Developed an automated web scraping solution using Python and Selenium Library to efficiently filter and parse Berkeley course offerings. The system processes over 6,000 courses and intelligently filters them down to the most relevant 20 courses optimized specifically for freshman year planning. This tool significantly streamlines the course selection process for new students.",
     technologies: ["Python", "Selenium", "Web Scraping", "Data Processing"],
     githubUrl: "https://github.com/RonitMathur10/Automated-Berkeley-Course-Search",
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop&crop=center",
+    imageUrl: BCS,
     featured: true,
     category: "automation"
   },
@@ -31,7 +34,7 @@ export const projects: Project[] = [
     longDescription: "Developed a comprehensive night-vision safety system using Raspberry Pi and advanced machine learning techniques. The project involved extensive experimentation with 7 different ML architectures including Inception and Region-Based CNN models. Through systematic feature optimization and model tuning, achieved a significant improvement in night-vision accuracy from 70% to 90%. Authored technical reports to demonstrate algorithmic improvements and obtained $2000 research scholarship funding.",
     technologies: ["Python", "Raspberry Pi", "Machine Learning", "Inception", "Region-Based CNN", "Computer Vision"],
     githubUrl: "https://github.com/ronitmathur10/project-omni",
-    imageUrl: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&h=450&fit=crop&crop=center",
+    imageUrl: OMNI,
     featured: true,
     category: "machine-learning"
   },
@@ -43,7 +46,7 @@ export const projects: Project[] = [
     technologies: ["Python", "TensorFlow", "FastAI", "ResNet-34", "CNN", "Kotlin", "Android", "ONNX", "TensorFlow Lite"],
     githubUrl: "https://github.com/ronitmathur10/isef-research",
     liveUrl: "https://play.google.com/store/apps/details?id=com.ronitmathur.medicalai",
-    imageUrl: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=450&fit=crop&crop=center",
+    imageUrl: EyeDiseaseApp,
     featured: true,
     category: "machine-learning"
   },

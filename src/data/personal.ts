@@ -23,7 +23,7 @@ export const personalInfo: PersonalInfo = {
     },
     {
       platform: "Email",
-      url: "ronit.mathur@berkeley.edu",
+      url: "mailto:ronit.mathur@berkeley.edu",
       icon: "mail"
     }
   ]
